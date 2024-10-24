@@ -22,7 +22,7 @@ module Calvatar
       svg = <<~SVG
         <svg xmlns='http://www.w3.org/2000/svg' width='#{@size}' height='#{@size}'>
           <rect width='100%' height='100%' fill='#{@color}'/>
-          <text x='50%' y='50%' font-size='#{@size * 0.8}' text-anchor='middle' fill='white' dy='.3em'>#{@initials}</text>
+          <text x='50%' y='50%' font-size='#{@size * 0.5}' text-anchor='middle' fill='white' dy='.3em'>#{@initials}</text>
         </svg>
       SVG
       svg.html_safe
